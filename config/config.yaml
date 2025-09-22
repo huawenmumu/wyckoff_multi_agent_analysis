@@ -1,0 +1,21 @@
+# API配置
+api:
+  deepseek:
+    api_key: "sk-3353495a7a4d46bda88094071ccad7bc"
+    base_url: "https://api.deepseek.com"
+    model: "deepseek-reasoner"
+
+# 数据获取配置
+data:
+  retry_times: 3
+  retry_delay: 1
+  date_range: 183  # 半年时间（天）
+
+# 并发处理配置
+concurrency:
+  max_workers: 10
+
+# 输出配置
+output:
+  directory: "ai_results"
+  format: "json"
